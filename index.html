@@ -1,1 +1,1957 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Химияны оқыту әдістемесі | Нұғыманұлы · Шоқыбаев · Өнербаева</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(34, 197, 94, 0.13), transparent 32%),
+        radial-gradient(circle at top right, rgba(59, 130, 246, 0.13), transparent 34%),
+        linear-gradient(135deg, #f8fff9 0%, #f5fbff 50%, #ffffff 100%);
+      color: #172033;
+      line-height: 1.65;
+      padding-bottom: 40px;
+    }
+
+    .page {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 14px;
+    }
+
+    .hero {
+      border-radius: 30px;
+      padding: 30px 18px;
+      color: white;
+      background:
+        linear-gradient(135deg, rgba(22, 163, 74, 0.95), rgba(37, 99, 235, 0.93), rgba(14, 165, 233, 0.88)),
+        url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.18)' stroke-width='2'%3E%3Cpath d='M42 42h62v82H42z'/%3E%3Cpath d='M55 62h36M55 80h28M55 98h34'/%3E%3Ccircle cx='145' cy='60' r='22'/%3E%3Cpath d='M145 38v44M123 60h44'/%3E%3Cpath d='M62 154c20-22 52-22 72 0'/%3E%3Cpath d='M82 168c12-10 24-10 36 0'/%3E%3C/g%3E%3C/svg%3E");
+      box-shadow: 0 18px 45px rgba(37, 99, 235, 0.22);
+      margin-bottom: 14px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      font-size: 13px;
+      font-weight: 850;
+      margin-bottom: 12px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero h1 {
+      font-size: clamp(25px, 5vw, 44px);
+      line-height: 1.08;
+      margin-bottom: 12px;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      max-width: 920px;
+      font-size: clamp(15px, 2.5vw, 18px);
+      opacity: 0.96;
+      margin-bottom: 16px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.23);
+      border-radius: 18px;
+      padding: 12px;
+      min-height: 84px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-card b {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .hero-card span {
+      font-size: 13px;
+      opacity: 0.92;
+    }
+
+    .rights {
+      margin: 12px 0 16px;
+      border-radius: 18px;
+      padding: 13px 14px;
+      background: #ecfdf5;
+      border: 1px solid #bbf7d0;
+      color: #14532d;
+      font-size: 14px;
+      font-weight: 750;
+    }
+
+    .top-nav-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(248, 255, 249, 0.88);
+      backdrop-filter: blur(14px);
+      padding: 8px 0;
+      margin-bottom: 16px;
+    }
+
+    .top-nav {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 4px 2px 8px;
+    }
+
+    .top-nav a {
+      flex: 0 0 auto;
+      text-decoration: none;
+      color: #14532d;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(34, 197, 94, 0.22);
+      border-radius: 999px;
+      padding: 9px 12px;
+      font-size: 13px;
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(34, 197, 94, 0.06);
+      white-space: nowrap;
+    }
+
+    .top-nav a:hover {
+      background: #dcfce7;
+      border-color: #86efac;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .intro-card,
+    .study-block {
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(34, 197, 94, 0.16);
+      box-shadow: 0 16px 38px rgba(34, 197, 94, 0.08);
+    }
+
+    .intro-card {
+      border-radius: 22px;
+      padding: 18px;
+    }
+
+    .intro-card h2 {
+      font-size: 21px;
+      margin-bottom: 10px;
+      color: #166534;
+    }
+
+    .intro-card p {
+      margin-bottom: 10px;
+      color: #334155;
+      font-size: 15px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: #dcfce7;
+      color: #14532d;
+      border: 1px solid #bbf7d0;
+      font-size: 12.5px;
+      font-weight: 820;
+    }
+
+    .study-block {
+      scroll-margin-top: 92px;
+      border-radius: 24px;
+      margin: 18px 0;
+      overflow: hidden;
+    }
+
+    .study-block-header {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 18px;
+      background: linear-gradient(135deg, #dcfce7, #dbeafe, #e0f2fe);
+      border-bottom: 1px solid rgba(34, 197, 94, 0.12);
+    }
+
+    .block-number {
+      flex: 0 0 auto;
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, #16a34a, #2563eb, #0ea5e9);
+      font-size: 21px;
+      font-weight: 950;
+    }
+
+    .study-block-header h2 {
+      font-size: clamp(20px, 3.2vw, 28px);
+      color: #166534;
+      line-height: 1.18;
+      margin-bottom: 6px;
+    }
+
+    .study-block-header p {
+      color: #475569;
+      font-size: 14.5px;
+    }
+
+    .mini-tabs {
+      display: flex;
+      gap: 7px;
+      overflow-x: auto;
+      padding: 12px 14px;
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .mini-tabs button {
+      flex: 0 0 auto;
+      border: none;
+      border-radius: 999px;
+      padding: 9px 13px;
+      background: #e2e8f0;
+      color: #334155;
+      font-weight: 880;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .mini-tabs button.active {
+      background: linear-gradient(135deg, #16a34a, #2563eb, #0ea5e9);
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 16px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    details {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 13px 14px;
+      margin-bottom: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: #166534;
+      font-size: 15.5px;
+    }
+
+    details p {
+      margin-top: 9px;
+      color: #334155;
+      font-size: 15px;
+    }
+
+    .source-small {
+      margin-top: 8px;
+      color: #64748b;
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    .formula-list,
+    .term-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .formula {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 5px solid #22c55e;
+      border-radius: 16px;
+      padding: 12px;
+      font-weight: 850;
+      color: #0f172a;
+      overflow-x: auto;
+    }
+
+    .term {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 12px;
+    }
+
+    .term b {
+      color: #166534;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .term p {
+      color: #475569;
+      font-size: 14.5px;
+    }
+
+    .question {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 14px;
+      margin-bottom: 13px;
+    }
+
+    .question p {
+      font-weight: 900;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .question-note {
+      display: inline-block;
+      margin-bottom: 8px;
+      border-radius: 999px;
+      padding: 5px 9px;
+      background: #dcfce7;
+      color: #14532d;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .option {
+      display: block;
+      border: 1px solid #dbe3ec;
+      border-radius: 14px;
+      padding: 10px 11px;
+      margin: 8px 0;
+      cursor: pointer;
+      background: #f8fafc;
+      color: #334155;
+      font-size: 14.5px;
+    }
+
+    .option input {
+      margin-right: 8px;
+      transform: translateY(1px);
+    }
+
+    .option.correct {
+      border-color: #16a34a;
+      background: #dcfce7;
+      color: #14532d;
+      font-weight: 800;
+    }
+
+    .option.wrong {
+      border-color: #dc2626;
+      background: #fee2e2;
+      color: #7f1d1d;
+      font-weight: 800;
+    }
+
+    .explain {
+      display: none;
+      margin-top: 10px;
+      border-radius: 14px;
+      padding: 11px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1e3a8a;
+      font-size: 14px;
+    }
+
+    .explain.show {
+      display: block;
+    }
+
+    .check-btn {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin-top: 14px;
+      background: linear-gradient(135deg, #16a34a, #2563eb, #0ea5e9);
+      color: white;
+      font-size: 16px;
+      font-weight: 950;
+      cursor: pointer;
+      box-shadow: 0 14px 30px rgba(34, 197, 94, 0.22);
+    }
+
+    .result {
+      display: none;
+      margin-bottom: 14px;
+      border-radius: 18px;
+      padding: 14px;
+      background: #ecfdf5;
+      border: 1px solid #86efac;
+      color: #14532d;
+    }
+
+    .result.show {
+      display: block;
+    }
+
+    .score {
+      font-size: 26px;
+      font-weight: 950;
+      margin-bottom: 4px;
+    }
+
+    .copyright-note {
+      margin-top: 22px;
+      border-radius: 18px;
+      padding: 14px;
+      background: #ecfdf5;
+      border: 1px solid #bbf7d0;
+      color: #14532d;
+      font-size: 14px;
+      font-weight: 750;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      margin: 18px 0 8px;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 10px;
+      }
+
+      .hero {
+        border-radius: 22px;
+        padding: 22px 15px;
+      }
+
+      .hero-grid,
+      .intro,
+      .formula-list,
+      .term-list {
+        grid-template-columns: 1fr;
+      }
+
+      .study-block-header {
+        gap: 10px;
+        padding: 15px;
+      }
+
+      .block-number {
+        width: 40px;
+        height: 40px;
+        border-radius: 14px;
+        font-size: 19px;
+      }
+
+      .tab-content {
+        padding: 13px;
+      }
+
+      .top-nav a {
+        font-size: 12.5px;
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="hero">
+      <div class="hero-badge">Нұғыманұлы · Шоқыбаев · Өнербаева · Химияны оқыту әдістемесі</div>
+
+      <h1>Химияны оқыту әдістемесі: ұғым, тіл, эксперимент және танымдық әрекет</h1>
+
+      <p>
+        Бұл сайт Нұғыманұлы, Шоқыбаев, Өнербаева оқу құралына сүйеніп,
+        химияны оқытудағы негізгі әдістемелік тіректерді қайталауға арналған:
+        химиялық ұғымдарды қалыптастыру, химиялық тіл, эксперимент, есептер,
+        көрнекілік және оқушылардың танымдық әрекеті.
+      </p>
+
+      <div class="hero-grid">
+        <div class="hero-card">
+          <b>Ұғым</b>
+          <span>Химиялық түсініктерді қалыптастыру</span>
+        </div>
+
+        <div class="hero-card">
+          <b>Тіл</b>
+          <span>Символика, терминология, номенклатура</span>
+        </div>
+
+        <div class="hero-card">
+          <b>Эксперимент</b>
+          <span>Демонстрация, зертхана, практика</span>
+        </div>
+
+        <div class="hero-card">
+          <b>Таным</b>
+          <span>Оқушы әрекетін дамыту</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="rights">
+      © Назерке. Барлық құқық қорғалған. Материалды рұқсатсыз көшіруге,
+      сатуға, қайта таратуға немесе коммерциялық мақсатта қолдануға болмайды.
+    </div>
+
+    <div class="top-nav-wrap">
+      <nav class="top-nav">
+        <a href="#block1">1. Ғылыми негіздер</a>
+        <a href="#block2">2. Ұғым қалыптастыру</a>
+        <a href="#block3">3. Химиялық тіл</a>
+        <a href="#block4">4. Эксперимент</a>
+        <a href="#block5">5. Есеп және жаттығу</a>
+        <a href="#block6">6. Көрнекілік</a>
+        <a href="#block7">7. Танымдық әрекет</a>
+        <a href="#block8">8. Жинақ тест</a>
+      </nav>
+    </div>
+
+    <section class="intro">
+      <div class="intro-card">
+        <h2>Бұл сайттың бағыты</h2>
+        <p>
+          Алдыңғы сайт жалпы “Химияны оқыту әдістемесі” құрылымын толық қамтыды.
+          Бұл сайт сол мазмұнды қайталамай, Нұғыманұлы, Шоқыбаев, Өнербаева еңбегіндегі
+          әдістемелік тірек мәселелерге басымдық береді.
+        </p>
+        <p>
+          Әр блокта теория, тірек сөздер, терминдер және КТ стиліндегі тест сұрақтары бар.
+        </p>
+      </div>
+
+      <div class="intro-card">
+        <h2>Негізгі дереккөз</h2>
+        <p>
+          Нұғыманұлы И., Шоқыбаев Ж.Ә., Өнербаева З.О. “Химияны оқыту әдістемесі:
+          оқу құралы”. Алматы: Print-S, 2005.
+        </p>
+
+        <div class="tag-list">
+          <span class="tag">Химиялық ұғым</span>
+          <span class="tag">Химиялық тіл</span>
+          <span class="tag">Эксперимент</span>
+          <span class="tag">Есеп шығару</span>
+          <span class="tag">Көрнекілік</span>
+          <span class="tag">Танымдық әрекет</span>
+          <span class="tag">Әдістемелік жүйе</span>
+          <span class="tag">КТ дайындық</span>
+        </div>
+
+        <div class="source-small">
+          Дереккөз: Нұғыманұлы И., Шоқыбаев Ж.Ә., Өнербаева З.О. “Химияны оқыту әдістемесі”.
+        </div>
+      </div>
+    </section>
+        <section id="block1" class="study-block">
+      <div class="study-block-header">
+        <div class="block-number">1</div>
+        <div>
+          <h2>Химияны оқыту әдістемесінің ғылыми-әдістемелік негіздері</h2>
+          <p>
+            Химияны оқыту әдістемесінің пәні, міндеттері, зерттеу бағыттары,
+            химия ғылымымен, педагогикамен, дидактикамен және психологиямен байланысы.
+          </p>
+        </div>
+      </div>
+
+      <div class="mini-tabs">
+        <button class="active" onclick="openTab(event, 'block1', 'theory')">Теория</button>
+        <button onclick="openTab(event, 'block1', 'formula')">Тірек</button>
+        <button onclick="openTab(event, 'block1', 'terms')">Термин</button>
+        <button onclick="openTab(event, 'block1', 'test')">Тест</button>
+      </div>
+
+      <div class="tab-content active" data-tab="theory">
+        <details open>
+          <summary>Химияны оқыту әдістемесінің пәні</summary>
+          <p>
+            Химияны оқыту әдістемесі химиялық білім берудің мақсатын, мазмұнын,
+            әдістерін, құралдарын, ұйымдастыру формаларын және оқыту нәтижесін
+            зерттейді. Оның негізгі нысаны — мектепте химияны оқыту үдерісі.
+          </p>
+          <div class="source-small">Дереккөз: Нұғыманұлы, Шоқыбаев, Өнербаева. “Химияны оқыту әдістемесі”.</div>
+        </details>
+
+        <details>
+          <summary>Әдістеменің негізгі міндеттері</summary>
+          <p>
+            Әдістеменің міндеттері химияны не үшін оқыту, нені оқыту, қалай оқыту,
+            қандай құралмен оқыту және нәтижені қалай анықтау сұрақтарымен байланысты.
+            Ол оқушының химиялық білімді саналы меңгеруіне, тәжірибелік әрекетіне
+            және ғылыми дүниетанымының қалыптасуына бағытталады.
+          </p>
+        </details>
+
+        <details>
+          <summary>Ғылыми негіздері</summary>
+          <p>
+            Химияны оқыту әдістемесі химия ғылымының мазмұнына, педагогиканың
+            тәрбиелік қағидаларына, дидактиканың оқыту заңдылықтарына және
+            психологияның оқушы дамуы туралы тұжырымдарына сүйенеді.
+          </p>
+        </details>
+
+        <details>
+          <summary>Химия ғылымымен байланысы</summary>
+          <p>
+            Химия ғылымы мектеп химиясының ғылыми негізін құрайды. Бірақ мектеп
+            мазмұны ғылымның көшірмесі емес, оқушы жасына, дайындық деңгейіне және
+            білім беру мақсатына сай дидактикалық өңделген жүйе ретінде беріледі.
+          </p>
+        </details>
+
+        <details>
+          <summary>Педагогика және дидактикамен байланысы</summary>
+          <p>
+            Педагогика оқытудың тәрбиелік мәнін, ал дидактика білім беру үдерісінің
+            жалпы заңдылықтарын түсіндіреді. Химия әдістемесі осы жалпы қағидаларды
+            химия пәнінің мазмұнына, экспериментіне және химиялық тіл ерекшеліктеріне
+            бейімдейді.
+          </p>
+        </details>
+
+        <details>
+          <summary>Психологиямен байланысы</summary>
+          <p>
+            Психология оқушының қабылдау, есте сақтау, ойлау, қиялдау, қызығу және
+            танымдық белсенділік ерекшеліктерін түсіндіреді. Химиялық ұғымдарды
+            қалыптастыруда оқушының жас ерекшелігі мен ойлау деңгейі ескеріледі.
+          </p>
+        </details>
+
+        <details>
+          <summary>КТ үшін маңызды тұжырым</summary>
+          <p>
+            Бұл тақырыпта химияны оқыту әдістемесінің зерттеу нысанын, негізгі
+            міндеттерін, ғылымдармен байланысын және мектеп химиясы мазмұнының
+            дидактикалық өңделуін ажырата білу маңызды.
+          </p>
+        </details>
+      </div>
+
+      <div class="tab-content" data-tab="formula">
+        <div class="formula-list">
+          <div class="formula">ХОӘ → химияны оқыту үдерісін зерттейді</div>
+          <div class="formula">Не үшін оқыту? → мақсат</div>
+          <div class="formula">Нені оқыту? → мазмұн</div>
+          <div class="formula">Қалай оқыту? → әдіс және форма</div>
+          <div class="formula">Немен оқыту? → оқыту құралдары</div>
+          <div class="formula">Нәтиже қандай? → білім, білік, дағды, құзырет</div>
+          <div class="formula">Химия ғылымы → пән мазмұнының ғылыми негізі</div>
+          <div class="formula">Педагогика → тәрбие және білім беру негізі</div>
+          <div class="formula">Дидактика → оқытудың жалпы заңдылықтары</div>
+          <div class="formula">Психология → оқушының танымдық дамуы</div>
+          <div class="formula">Мектеп химиясы → дидактикалық өңделген химия негізі</div>
+          <div class="formula">Әдістемелік жүйе → мақсат + мазмұн + әдіс + құрал + нәтиже</div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="terms">
+        <div class="term-list">
+          <div class="term"><b>Химияны оқыту әдістемесі</b><p>Химиядан білім берудің мазмұны, әдістері, құралдары, формалары және нәтижесін зерттейтін педагогикалық ғылым.</p></div>
+          <div class="term"><b>Зерттеу нысаны</b><p>Химияны оқыту үдерісі және оның құрамдас бөліктері.</p></div>
+          <div class="term"><b>Әдістемелік жүйе</b><p>Мақсат, мазмұн, әдіс, құрал, форма және нәтиженің байланысқан жүйесі.</p></div>
+          <div class="term"><b>Дидактикалық өңдеу</b><p>Ғылыми мазмұнды оқушы деңгейіне сай оқу материалына айналдыру.</p></div>
+          <div class="term"><b>Дидактика</b><p>Оқытудың жалпы заңдылықтарын зерттейтін педагогика саласы.</p></div>
+          <div class="term"><b>Танымдық әрекет</b><p>Оқушының білімді қабылдау, түсіну, талдау, қолдану және қорытындылау әрекеті.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="test">
+        <div id="block1Result" class="result"></div>
+
+        <div class="question" data-answer="2">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>1. Химияны оқыту әдістемесінің негізгі зерттеу нысаны:</p>
+          <label class="option"><input type="radio" name="n1q1" value="0"> Химиялық өндірістің технологиялық кезеңдері мен шикізат құрамы</label>
+          <label class="option"><input type="radio" name="n1q1" value="1"> Заттардың зертханалық анализ әдістері мен реактив тұрақтылығы</label>
+          <label class="option"><input type="radio" name="n1q1" value="2"> Мектепте химияны оқыту үдерісі және оның құрамдас бөліктері</label>
+          <label class="option"><input type="radio" name="n1q1" value="3"> Химиялық реакциялардың молекулалық механизмдері мен кинетикасы</label>
+          <label class="option"><input type="radio" name="n1q1" value="4"> Өндірістік аппараттардың құрылымы мен техникалық сипаттамасы</label>
+          <div class="explain">Дұрыс жауап: C. Химияны оқыту әдістемесі мектепте химияны оқыту үдерісін, оның мақсаты, мазмұны, әдісі, құралы және нәтижесін зерттейді.</div>
+        </div>
+
+        <div class="question" data-answer="0,3,5">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>2. Химияны оқыту әдістемесінің негізгі сұрақтарын таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n1q2" value="0"> Химия не үшін оқытылады?</label>
+          <label class="option"><input type="checkbox" name="n1q2" value="1"> Химиялық шикізат қалай өңделеді?</label>
+          <label class="option"><input type="checkbox" name="n1q2" value="2"> Реактивтердің өндірістік сапасы қалай анықталады?</label>
+          <label class="option"><input type="checkbox" name="n1q2" value="3"> Химияда нені оқыту керек?</label>
+          <label class="option"><input type="checkbox" name="n1q2" value="4"> Заттардың нарықтық құны қалай есептеледі?</label>
+          <label class="option"><input type="checkbox" name="n1q2" value="5"> Химияны қалай оқыту керек?</label>
+          <div class="explain">Дұрыс жауаптар: A, D, F. Әдістеме оқытудың мақсаты, мазмұны және әдісін анықтайтын сұрақтарға жауап береді.</div>
+        </div>
+
+        <div class="question" data-answer="1">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>3. “Мектеп химиясы химия ғылымының дәл көшірмесі емес” деген тұжырым нені білдіреді?</p>
+          <label class="option"><input type="radio" name="n1q3" value="0"> Мектеп химиясында тәжірибе мен теория арасындағы байланыс басым қарастырылады</label>
+          <label class="option"><input type="radio" name="n1q3" value="1"> Ғылыми мазмұн оқушы жасына және білім мақсатына сай дидактикалық өңделеді</label>
+          <label class="option"><input type="radio" name="n1q3" value="2"> Химиялық ұғымдар оқулықтағы тақырыптық рет бойынша жүйеленеді</label>
+          <label class="option"><input type="radio" name="n1q3" value="3"> Оқу материалы зертханалық тәжірибелермен және есептермен толықтырылады</label>
+          <label class="option"><input type="radio" name="n1q3" value="4"> Химиялық білім пәнаралық байланыс арқылы кеңейтіледі</label>
+          <div class="explain">Дұрыс жауап: B. Мектеп мазмұны химия ғылымының негіздерін оқушы деңгейіне сай іріктеу және өңдеу арқылы жасалады.</div>
+        </div>
+
+        <div class="question" data-answer="1,2,4">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>4. Химияны оқыту әдістемесі сүйенетін ғылымдарды таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n1q4" value="0"> Өндірістік логистика</label>
+          <label class="option"><input type="checkbox" name="n1q4" value="1"> Педагогика</label>
+          <label class="option"><input type="checkbox" name="n1q4" value="2"> Дидактика</label>
+          <label class="option"><input type="checkbox" name="n1q4" value="3"> Технологиялық менеджмент</label>
+          <label class="option"><input type="checkbox" name="n1q4" value="4"> Психология</label>
+          <label class="option"><input type="checkbox" name="n1q4" value="5"> Өнеркәсіп экономикасы</label>
+          <div class="explain">Дұрыс жауаптар: B, C, E. Әдістеме педагогика, дидактика және психология заңдылықтарына сүйенеді.</div>
+        </div>
+
+        <div class="question" data-answer="4">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>5. Әдістемелік жүйенің құрамдас бөліктері дұрыс берілген қатар:</p>
+          <label class="option"><input type="radio" name="n1q5" value="0"> Реактив, ыдыс, штатив, қыздырғыш, индикатор</label>
+          <label class="option"><input type="radio" name="n1q5" value="1"> Оқулық, дәптер, кесте, модель, зертхана</label>
+          <label class="option"><input type="radio" name="n1q5" value="2"> Тақырып, параграф, жаттығу, сұрақ, қорытынды</label>
+          <label class="option"><input type="radio" name="n1q5" value="3"> Сабақ, экскурсия, үйірме, олимпиада, факультатив</label>
+          <label class="option"><input type="radio" name="n1q5" value="4"> Мақсат, мазмұн, әдіс, құрал, форма, нәтиже</label>
+          <div class="explain">Дұрыс жауап: E. Әдістемелік жүйе мақсат, мазмұн, әдіс, құрал, форма және нәтиженің өзара байланысынан тұрады.</div>
+        </div>
+
+        <button class="check-btn" onclick="checkBlock('block1')">Тестті тексеру</button>
+      </div>
+    </section>
+        <section id="block2" class="study-block">
+      <div class="study-block-header">
+        <div class="block-number">2</div>
+        <div>
+          <h2>Химиялық ұғымдарды қалыптастыру әдістемесі</h2>
+          <p>
+            Химиялық ұғым, ұғым қалыптастыру кезеңдері, бастапқы және теориялық
+            ұғымдар, ұғымдардың дамуы, жүйелілігі және оқушының саналы меңгеруі.
+          </p>
+        </div>
+      </div>
+
+      <div class="mini-tabs">
+        <button class="active" onclick="openTab(event, 'block2', 'theory')">Теория</button>
+        <button onclick="openTab(event, 'block2', 'formula')">Тірек</button>
+        <button onclick="openTab(event, 'block2', 'terms')">Термин</button>
+        <button onclick="openTab(event, 'block2', 'test')">Тест</button>
+      </div>
+
+      <div class="tab-content active" data-tab="theory">
+        <details open>
+          <summary>Химиялық ұғымның мәні</summary>
+          <p>
+            Химиялық ұғым — заттар мен химиялық құбылыстардың маңызды белгілерін
+            бейнелейтін ой формасы. Ұғым оқушы санасында бірден қалыптаспайды,
+            ол бақылау, салыстыру, талдау, жалпылау және қолдану арқылы дамиды.
+          </p>
+          <div class="source-small">Дереккөз: Нұғыманұлы, Шоқыбаев, Өнербаева. “Химияны оқыту әдістемесі”.</div>
+        </details>
+
+        <details>
+          <summary>Ұғым қалыптастыру кезеңдері</summary>
+          <p>
+            Ұғым қалыптастыру нақты объектіні немесе құбылысты бақылаудан басталады.
+            Одан кейін оқушы белгілерді салыстырады, маңызды қасиеттерді ажыратады,
+            анықтама жасайды және ұғымды есепте, тәжірибеде, теңдеуде қолданады.
+          </p>
+        </details>
+
+        <details>
+          <summary>Бастапқы химиялық ұғымдар</summary>
+          <p>
+            Бастапқы ұғымдарға зат, қоспа, таза зат, химиялық элемент, атом, молекула,
+            химиялық реакция, формула және теңдеу жатады. Бұл ұғымдар кейінгі
+            теориялық мазмұнды меңгеруге негіз болады.
+          </p>
+        </details>
+
+        <details>
+          <summary>Теориялық ұғымдардың дамуы</summary>
+          <p>
+            Валенттілік, тотығу дәрежесі, химиялық байланыс, электролиттік диссоциация,
+            периодтық заң, құрылыс теориясы сияқты ұғымдар бастапқы ұғымдарға сүйеніп
+            дамиды. Мұғалім әр жаңа ұғымды бұрынғы біліммен байланыстырады.
+          </p>
+        </details>
+
+        <details>
+          <summary>Ұғымдарды жүйелеу</summary>
+          <p>
+            Химиялық ұғымдар жеке-жеке емес, жүйе ретінде меңгеріледі. Мысалы, атом,
+            элемент, молекула, зат, реакция, формула және теңдеу өзара байланысты.
+            Жүйелеу кесте, схема, салыстыру, есеп және тәжірибе арқылы жүзеге асады.
+          </p>
+        </details>
+
+        <details>
+          <summary>КТ үшін маңызды тұжырым</summary>
+          <p>
+            Ұғым қалыптастыруда бақылау, салыстыру, маңызды белгілерді анықтау,
+            анықтама беру және қолдану ретін білу керек. Бастапқы ұғымдар теориялық
+            ұғымдардың негізі ретінде қарастырылады.
+          </p>
+        </details>
+      </div>
+
+      <div class="tab-content" data-tab="formula">
+        <div class="formula-list">
+          <div class="formula">Ұғым → маңызды белгілерді бейнелейтін ой формасы</div>
+          <div class="formula">Қалыптастыру → бақылау + салыстыру + талдау + анықтама + қолдану</div>
+          <div class="formula">Бастапқы ұғым → зат, атом, молекула, реакция, формула</div>
+          <div class="formula">Теориялық ұғым → байланыс, валенттілік, тотығу дәрежесі</div>
+          <div class="formula">Ұғымды меңгеру → түсіну + дәлелдеу + қолдану</div>
+          <div class="formula">Жүйелеу → кесте + схема + салыстыру + қорытынды</div>
+          <div class="formula">Жаңа ұғым → бұрынғы біліммен байланысады</div>
+          <div class="formula">Химиялық ойлау → ұғымдар арасындағы байланысты көру</div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="terms">
+        <div class="term-list">
+          <div class="term"><b>Химиялық ұғым</b><p>Химиялық объектілер мен құбылыстардың маңызды белгілерін жинақтайтын ой формасы.</p></div>
+          <div class="term"><b>Бастапқы ұғым</b><p>Химияны әрі қарай меңгеруге негіз болатын алғашқы түсінік.</p></div>
+          <div class="term"><b>Теориялық ұғым</b><p>Химиялық заңдылықтар мен теорияларды түсіндіретін жалпыланған ұғым.</p></div>
+          <div class="term"><b>Жалпылау</b><p>Ұқсас белгілерді біріктіріп, ортақ қорытынды жасау әрекеті.</p></div>
+          <div class="term"><b>Жүйелеу</b><p>Ұғымдарды өзара байланыста реттеу және құрылымдау.</p></div>
+          <div class="term"><b>Саналы меңгеру</b><p>Ұғымды түсініп, дәлелдеп, жаңа жағдайда қолдана білу.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="test">
+        <div id="block2Result" class="result"></div>
+
+        <div class="question" data-answer="2">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>1. Химиялық ұғымға сәйкес анықтама:</p>
+          <label class="option"><input type="radio" name="n2q1" value="0"> Химиялық тәжірибені орындауға арналған нұсқаулар жиынтығы</label>
+          <label class="option"><input type="radio" name="n2q1" value="1"> Оқу бағдарламасындағы тақырыптардың орналасу реті</label>
+          <label class="option"><input type="radio" name="n2q1" value="2"> Химиялық объектілер мен құбылыстардың маңызды белгілерін бейнелейтін ой формасы</label>
+          <label class="option"><input type="radio" name="n2q1" value="3"> Зертханалық құралдар мен реактивтерді қолдану тәртібі</label>
+          <label class="option"><input type="radio" name="n2q1" value="4"> Оқушылардың оқу жетістігін бағалау көрсеткіші</label>
+          <div class="explain">Дұрыс жауап: C. Химиялық ұғым заттар мен құбылыстардың маңызды белгілерін жинақтап көрсетеді.</div>
+        </div>
+
+        <div class="question" data-answer="0,3,5">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>2. Бастапқы химиялық ұғымдарға жататындарды таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n2q2" value="0"> Зат</label>
+          <label class="option"><input type="checkbox" name="n2q2" value="1"> Критериалды бағалау</label>
+          <label class="option"><input type="checkbox" name="n2q2" value="2"> Сабақ формасы</label>
+          <label class="option"><input type="checkbox" name="n2q2" value="3"> Атом</label>
+          <label class="option"><input type="checkbox" name="n2q2" value="4"> Оқу мақсаты</label>
+          <label class="option"><input type="checkbox" name="n2q2" value="5"> Химиялық реакция</label>
+          <div class="explain">Дұрыс жауаптар: A, D, F. Зат, атом және химиялық реакция алғашқы химиялық ұғымдарға жатады.</div>
+        </div>
+
+        <div class="question" data-answer="1">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>3. Ұғым қалыптастырудың әдістемелік реті дұрыс берілген қатар:</p>
+          <label class="option"><input type="radio" name="n2q3" value="0"> Анықтама → бақылау → есеп → бағалау → қорытынды</label>
+          <label class="option"><input type="radio" name="n2q3" value="1"> Бақылау → салыстыру → маңызды белгілер → анықтама → қолдану</label>
+          <label class="option"><input type="radio" name="n2q3" value="2"> Жоспар → тақырып → термин → бақылау → нәтиже</label>
+          <label class="option"><input type="radio" name="n2q3" value="3"> Формула → атау → құрал → тәжірибе → есеп</label>
+          <label class="option"><input type="radio" name="n2q3" value="4"> Мәтін → сұрақ → кесте → жауап → баға</label>
+          <div class="explain">Дұрыс жауап: B. Ұғым нақты бақылаудан басталып, салыстыру, маңызды белгілерді анықтау, анықтама және қолдану арқылы қалыптасады.</div>
+        </div>
+
+        <div class="question" data-answer="1,2,4">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>4. Теориялық химиялық ұғымдарға жататындарды таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n2q4" value="0"> Пробирка</label>
+          <label class="option"><input type="checkbox" name="n2q4" value="1"> Валенттілік</label>
+          <label class="option"><input type="checkbox" name="n2q4" value="2"> Химиялық байланыс</label>
+          <label class="option"><input type="checkbox" name="n2q4" value="3"> Зертханалық штатив</label>
+          <label class="option"><input type="checkbox" name="n2q4" value="4"> Тотығу дәрежесі</label>
+          <label class="option"><input type="checkbox" name="n2q4" value="5"> Сабақ кезеңі</label>
+          <div class="explain">Дұрыс жауаптар: B, C, E. Валенттілік, химиялық байланыс және тотығу дәрежесі теориялық ұғымдарға жатады.</div>
+        </div>
+
+        <div class="question" data-answer="4">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>5. Химиялық ұғымдарды жүйелеудің негізгі қызметі:</p>
+          <label class="option"><input type="radio" name="n2q5" value="0"> Сабақтың уақыттық құрылымын қысқарту</label>
+          <label class="option"><input type="radio" name="n2q5" value="1"> Реактивтерді тәжірибеге дайындау ретін анықтау</label>
+          <label class="option"><input type="radio" name="n2q5" value="2"> Оқулықтағы тақырып атауларын қайта орналастыру</label>
+          <label class="option"><input type="radio" name="n2q5" value="3"> Бағалау тапсырмаларының санын көбейту</label>
+          <label class="option"><input type="radio" name="n2q5" value="4"> Ұғымдар арасындағы байланысты түсіндіру және білімді тұтастандыру</label>
+          <div class="explain">Дұрыс жауап: E. Жүйелеу оқушыға ұғымдардың өзара байланысын көруге және білімді тұтас меңгеруге көмектеседі.</div>
+        </div>
+
+        <button class="check-btn" onclick="checkBlock('block2')">Тестті тексеру</button>
+      </div>
+    </section>
+        <section id="block3" class="study-block">
+      <div class="study-block-header">
+        <div class="block-number">3</div>
+        <div>
+          <h2>Химиялық тіл, символика, терминология және номенклатура</h2>
+          <p>
+            Химиялық тілдің құрамдас бөліктері, элемент таңбалары, формулалар,
+            теңдеулер, терминдер және химиялық номенклатураны оқыту әдістемесі.
+          </p>
+        </div>
+      </div>
+
+      <div class="mini-tabs">
+        <button class="active" onclick="openTab(event, 'block3', 'theory')">Теория</button>
+        <button onclick="openTab(event, 'block3', 'formula')">Тірек</button>
+        <button onclick="openTab(event, 'block3', 'terms')">Термин</button>
+        <button onclick="openTab(event, 'block3', 'test')">Тест</button>
+      </div>
+
+      <div class="tab-content active" data-tab="theory">
+        <details open>
+          <summary>Химиялық тілдің маңызы</summary>
+          <p>
+            Химиялық тіл — химия ғылымының негізгі байланыс құралы. Ол химиялық
+            символикадан, терминологиядан және номенклатурадан тұрады. Оқушы
+            химиялық таңбаны, формуланы, теңдеуді, терминді және атауды дұрыс оқып,
+            жазып, түсіндіре алуы керек.
+          </p>
+          <div class="source-small">Дереккөз: Нұғыманұлы, Шоқыбаев, Өнербаева. “Химияны оқыту әдістемесі”.</div>
+        </details>
+
+        <details>
+          <summary>Химиялық символика</summary>
+          <p>
+            Химиялық символика элемент таңбаларын, химиялық формулаларды,
+            коэффициенттерді, индекстерді, реакция теңдеулерін қамтиды. Символиканы
+            оқытуда таңба мен мағына байланысын нақты түсіндіру маңызды.
+          </p>
+        </details>
+
+        <details>
+          <summary>Химиялық формула және теңдеу</summary>
+          <p>
+            Формула заттың құрамын көрсетеді, ал химиялық теңдеу реакцияға қатысатын
+            және түзілетін заттарды, олардың сандық қатынасын сипаттайды. Оқушы
+            индекс пен коэффициенттің айырмасын дұрыс түсінуі қажет.
+          </p>
+        </details>
+
+        <details>
+          <summary>Терминология</summary>
+          <p>
+            Химиялық терминология химиялық ұғымдарды дәл атауға мүмкіндік береді.
+            Терминді оқытуда оның анықтамасы, мағынасы, қолданылу жағдайы және басқа
+            ұғымдармен байланысы бірге беріледі.
+          </p>
+        </details>
+
+        <details>
+          <summary>Номенклатура</summary>
+          <p>
+            Номенклатура химиялық заттарды жүйелі атау ережелерін қамтиды. Зат атауын
+            формуламен, құрамымен және класына тән белгілермен байланыстырып оқыту
+            оқушының химиялық ойлауын дамытады.
+          </p>
+        </details>
+
+        <details>
+          <summary>КТ үшін маңызды тұжырым</summary>
+          <p>
+            Химиялық тіл бойынша символика, терминология, номенклатура айырмасын,
+            формула мен теңдеудің қызметін, индекс пен коэффициенттің мағынасын және
+            атау-формула байланысын білу маңызды.
+          </p>
+        </details>
+      </div>
+
+      <div class="tab-content" data-tab="formula">
+        <div class="formula-list">
+          <div class="formula">Химиялық тіл → символика + терминология + номенклатура</div>
+          <div class="formula">Символика → таңба + формула + теңдеу</div>
+          <div class="formula">Терминология → ұғымдардың ғылыми атаулары</div>
+          <div class="formula">Номенклатура → заттарды атау ережелері</div>
+          <div class="formula">Формула → зат құрамын көрсетеді</div>
+          <div class="formula">Теңдеу → реакцияны және сандық қатынасты көрсетеді</div>
+          <div class="formula">Индекс → молекуладағы атом санын көрсетеді</div>
+          <div class="formula">Коэффициент → бөлшектер немесе зат мөлшерінің қатынасын көрсетеді</div>
+          <div class="formula">Таңба → элементті білдіреді</div>
+          <div class="formula">Атау ↔ формула → химиялық сауаттылық негізі</div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="terms">
+        <div class="term-list">
+          <div class="term"><b>Химиялық тіл</b><p>Химиялық ақпаратты белгі, термин және атау арқылы жеткізу жүйесі.</p></div>
+          <div class="term"><b>Химиялық символика</b><p>Элемент таңбалары, формулалар және теңдеулер жүйесі.</p></div>
+          <div class="term"><b>Терминология</b><p>Химиялық ұғымдарды білдіретін ғылыми атаулар жүйесі.</p></div>
+          <div class="term"><b>Номенклатура</b><p>Химиялық заттарды атау ережелері жүйесі.</p></div>
+          <div class="term"><b>Индекс</b><p>Формуладағы атом санын көрсететін төменгі сан.</p></div>
+          <div class="term"><b>Коэффициент</b><p>Теңдеудегі зат мөлшерінің қатынасын көрсететін сан.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="test">
+        <div id="block3Result" class="result"></div>
+
+        <div class="question" data-answer="2">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>1. Химиялық тілдің негізгі құрамдас бөліктері:</p>
+          <label class="option"><input type="radio" name="n3q1" value="0"> Сабақ, тәжірибе, бақылау</label>
+          <label class="option"><input type="radio" name="n3q1" value="1"> Оқулық, бағдарлама, жоспар</label>
+          <label class="option"><input type="radio" name="n3q1" value="2"> Символика, терминология, номенклатура</label>
+          <label class="option"><input type="radio" name="n3q1" value="3"> Реактив, құрал, көрнекілік</label>
+          <label class="option"><input type="radio" name="n3q1" value="4"> Мақсат, мазмұн, нәтиже</label>
+          <div class="explain">Дұрыс жауап: C. Химиялық тіл символика, терминология және номенклатурадан тұрады.</div>
+        </div>
+
+        <div class="question" data-answer="0,3,5">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>2. Химиялық символикаға жататындарды таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n3q2" value="0"> Элемент таңбалары</label>
+          <label class="option"><input type="checkbox" name="n3q2" value="1"> Сабақ формалары</label>
+          <label class="option"><input type="checkbox" name="n3q2" value="2"> Бағалау критерийлері</label>
+          <label class="option"><input type="checkbox" name="n3q2" value="3"> Химиялық формулалар</label>
+          <label class="option"><input type="checkbox" name="n3q2" value="4"> Оқу мақсаттары</label>
+          <label class="option"><input type="checkbox" name="n3q2" value="5"> Реакция теңдеулері</label>
+          <div class="explain">Дұрыс жауаптар: A, D, F. Символика элемент таңбаларын, формулаларды және теңдеулерді қамтиды.</div>
+        </div>
+
+        <div class="question" data-answer="1">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>3. Индекс пен коэффициент айырмасы дұрыс берілген жауап:</p>
+          <label class="option"><input type="radio" name="n3q3" value="0"> Индекс реакция бағытын, коэффициент заттың атауын көрсетеді</label>
+          <label class="option"><input type="radio" name="n3q3" value="1"> Индекс атом санын, коэффициент зат мөлшерінің қатынасын көрсетеді</label>
+          <label class="option"><input type="radio" name="n3q3" value="2"> Индекс зат класын, коэффициент элемент таңбасын көрсетеді</label>
+          <label class="option"><input type="radio" name="n3q3" value="3"> Индекс тәжірибе белгісін, коэффициент термин мағынасын көрсетеді</label>
+          <label class="option"><input type="radio" name="n3q3" value="4"> Индекс теңдеу түрін, коэффициент оқыту әдісін көрсетеді</label>
+          <div class="explain">Дұрыс жауап: B. Индекс молекуладағы атом санын, коэффициент реакция теңдеуіндегі сандық қатынасты көрсетеді.</div>
+        </div>
+
+        <div class="question" data-answer="1,2,4">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>4. Химиялық терминді оқытуда ескерілетін белгілер:</p>
+          <label class="option"><input type="checkbox" name="n3q4" value="0"> Терминнің жазылу көркемдігі</label>
+          <label class="option"><input type="checkbox" name="n3q4" value="1"> Терминнің мағынасы</label>
+          <label class="option"><input type="checkbox" name="n3q4" value="2"> Терминнің анықтамасы</label>
+          <label class="option"><input type="checkbox" name="n3q4" value="3"> Терминнің дәптердегі орналасуы</label>
+          <label class="option"><input type="checkbox" name="n3q4" value="4"> Терминнің басқа ұғымдармен байланысы</label>
+          <label class="option"><input type="checkbox" name="n3q4" value="5"> Терминнің сабақ уақытындағы орны</label>
+          <div class="explain">Дұрыс жауаптар: B, C, E. Термин мағынасы, анықтамасы және ұғымдармен байланысы арқылы меңгеріледі.</div>
+        </div>
+
+        <div class="question" data-answer="4">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>5. Номенклатураны оқытудың негізгі қызметі:</p>
+          <label class="option"><input type="radio" name="n3q5" value="0"> Зертханалық құралдардың қолданылу ретін көрсету</label>
+          <label class="option"><input type="radio" name="n3q5" value="1"> Сабақ кезеңдерін әдістемелік ретпен орналастыру</label>
+          <label class="option"><input type="radio" name="n3q5" value="2"> Оқу нәтижесін сандық көрсеткішпен бағалау</label>
+          <label class="option"><input type="radio" name="n3q5" value="3"> Тәжірибе қауіпсіздігін ұйымдастыру</label>
+          <label class="option"><input type="radio" name="n3q5" value="4"> Заттарды жүйелі атау және атауды формуламен байланыстыру</label>
+          <div class="explain">Дұрыс жауап: E. Номенклатура заттарды дұрыс атауға және атау-формула байланысын түсінуге көмектеседі.</div>
+        </div>
+
+        <button class="check-btn" onclick="checkBlock('block3')">Тестті тексеру</button>
+      </div>
+    </section>
+        <section id="block4" class="study-block">
+      <div class="study-block-header">
+        <div class="block-number">4</div>
+        <div>
+          <h2>Химиялық экспериментті ұйымдастыру әдістемесі</h2>
+          <p>
+            Демонстрациялық тәжірибе, зертханалық жұмыс, практикалық жұмыс,
+            эксперименттік есеп, қауіпсіздік және тәжірибе арқылы химиялық ұғымды дәлелдеу.
+          </p>
+        </div>
+      </div>
+
+      <div class="mini-tabs">
+        <button class="active" onclick="openTab(event, 'block4', 'theory')">Теория</button>
+        <button onclick="openTab(event, 'block4', 'formula')">Тірек</button>
+        <button onclick="openTab(event, 'block4', 'terms')">Термин</button>
+        <button onclick="openTab(event, 'block4', 'test')">Тест</button>
+      </div>
+
+      <div class="tab-content active" data-tab="theory">
+        <details open>
+          <summary>Химиялық эксперименттің маңызы</summary>
+          <p>
+            Химиялық эксперимент химияны оқытудың негізгі әдістемелік құралы болып саналады.
+            Ол оқушыға химиялық құбылысты тікелей бақылауға, зат қасиетін салыстыруға,
+            реакция белгілерін көруге және теориялық ұғымды тәжірибелік дәлелмен байланыстыруға мүмкіндік береді.
+          </p>
+          <div class="source-small">Дереккөз: Нұғыманұлы, Шоқыбаев, Өнербаева. “Химияны оқыту әдістемесі”.</div>
+        </details>
+
+        <details>
+          <summary>Демонстрациялық тәжірибе</summary>
+          <p>
+            Демонстрациялық тәжірибені мұғалім көрсетеді. Оның мақсаты — жаңа ұғымды
+            нақтылау, реакцияның сыртқы белгілерін көрсету, оқушылардың назарын
+            негізгі құбылысқа бағыттау және тәжірибені қауіпсіз орындаудың үлгісін беру.
+          </p>
+        </details>
+
+        <details>
+          <summary>Зертханалық жұмыс</summary>
+          <p>
+            Зертханалық жұмыста оқушы тәжірибені өзі орындайды, бақылайды, нәтижесін
+            жазады және қорытынды жасайды. Бұл жұмыс химиялық білік пен дағдыны,
+            ұқыптылықты, дәлдікті және қауіпсіздік мәдениетін қалыптастырады.
+          </p>
+        </details>
+
+        <details>
+          <summary>Практикалық жұмыс</summary>
+          <p>
+            Практикалық жұмыс бұрын меңгерілген білімді қолдануға бағытталады.
+            Оқушы реактивтерді таңдайды, тәжірибені жоспарлайды, нәтижені талдайды,
+            сапалық реакция немесе эксперименттік есеп арқылы қорытынды жасайды.
+          </p>
+        </details>
+
+        <details>
+          <summary>Эксперименттік есеп</summary>
+          <p>
+            Эксперименттік есепте оқушы химиялық білімін тәжірибе арқылы қолданады.
+            Мұнда мәселе қойылады, тәжірибе жолы таңдалады, бақылау жүргізіледі,
+            алынған нәтиже химиялық ұғымдар мен реакция теңдеулері арқылы түсіндіріледі.
+          </p>
+        </details>
+
+        <details>
+          <summary>Қауіпсіздік</summary>
+          <p>
+            Химиялық эксперимент қауіпсіздік ережелерімен бірге ұйымдастырылады.
+            Қышқылдармен, сілтілермен, қыздырғыш құралдармен, шыны ыдыстармен және
+            газдармен жұмыс істеуде мұғалім нұсқаулық беріп, оқушы әрекетін бақылайды.
+          </p>
+        </details>
+      </div>
+
+      <div class="tab-content" data-tab="formula">
+        <div class="formula-list">
+          <div class="formula">Эксперимент → бақылау + дәлелдеу + қорытынды</div>
+          <div class="formula">Демонстрация → мұғалім көрсетеді</div>
+          <div class="formula">Зертханалық жұмыс → оқушы орындайды</div>
+          <div class="formula">Практикалық жұмыс → білімді қолдану</div>
+          <div class="formula">Эксперименттік есеп → мәселе + тәжірибе + түсіндіру</div>
+          <div class="formula">Реакция белгісі → газ, тұнба, түс, жылу, жарық</div>
+          <div class="formula">Қауіпсіздік → эксперименттің міндетті шарты</div>
+          <div class="formula">Тәжірибе нәтижесі → бақылау жазбасы + реакция теңдеуі</div>
+          <div class="formula">Сапалық реакция → затты немесе ионды анықтау</div>
+          <div class="formula">Эксперимент мақсаты → ұғымды нақтылау және дәлелдеу</div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="terms">
+        <div class="term-list">
+          <div class="term"><b>Химиялық эксперимент</b><p>Химиялық құбылысты тәжірибе арқылы зерттеу және түсіндіру құралы.</p></div>
+          <div class="term"><b>Демонстрациялық тәжірибе</b><p>Мұғалім көрсететін, оқушы бақылайтын тәжірибе.</p></div>
+          <div class="term"><b>Зертханалық жұмыс</b><p>Оқушының тәжірибені өзі орындап, бақылау және қорытынды жасау жұмысы.</p></div>
+          <div class="term"><b>Практикалық жұмыс</b><p>Білімді тәжірибеде қолдануға бағытталған оқу жұмысы.</p></div>
+          <div class="term"><b>Эксперименттік есеп</b><p>Химиялық мәселені тәжірибе арқылы шешуге арналған тапсырма.</p></div>
+          <div class="term"><b>Сапалық реакция</b><p>Белгілі затты, ионды немесе функционалдық топты анықтайтын реакция.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="test">
+        <div id="block4Result" class="result"></div>
+
+        <div class="question" data-answer="2">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>1. Химиялық эксперименттің негізгі әдістемелік қызметі:</p>
+          <label class="option"><input type="radio" name="n4q1" value="0"> Оқу бағдарламасындағы тақырыптар ретін құжаттық тұрғыдан нақтылау</label>
+          <label class="option"><input type="radio" name="n4q1" value="1"> Сабақтың уақыттық құрылымын кезеңдерге бөліп ұйымдастыру</label>
+          <label class="option"><input type="radio" name="n4q1" value="2"> Химиялық құбылысты бақылау арқылы ұғымды нақтылау және дәлелдеу</label>
+          <label class="option"><input type="radio" name="n4q1" value="3"> Оқушылардың жазбаша жауаптарын бағалау критерийімен салыстыру</label>
+          <label class="option"><input type="radio" name="n4q1" value="4"> Оқулықтағы теориялық мәтіндерді кесте арқылы жүйелеу</label>
+          <div class="explain">Дұрыс жауап: C. Эксперимент химиялық құбылысты бақылауға, ұғымды нақтылауға және теорияны дәлелдеуге мүмкіндік береді.</div>
+        </div>
+
+        <div class="question" data-answer="0,3,5">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>2. Химиялық эксперимент түрлерін таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n4q2" value="0"> Демонстрациялық тәжірибе</label>
+          <label class="option"><input type="checkbox" name="n4q2" value="1"> Оқу мақсатын талдау</label>
+          <label class="option"><input type="checkbox" name="n4q2" value="2"> Бағалау рубрикасы</label>
+          <label class="option"><input type="checkbox" name="n4q2" value="3"> Зертханалық жұмыс</label>
+          <label class="option"><input type="checkbox" name="n4q2" value="4"> Сабақ жоспары</label>
+          <label class="option"><input type="checkbox" name="n4q2" value="5"> Практикалық жұмыс</label>
+          <div class="explain">Дұрыс жауаптар: A, D, F. Демонстрациялық тәжірибе, зертханалық жұмыс және практикалық жұмыс химиялық эксперимент формаларына жатады.</div>
+        </div>
+
+        <div class="question" data-answer="4">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>3. Демонстрациялық тәжірибеге сәйкес сипаттама:</p>
+          <label class="option"><input type="radio" name="n4q3" value="0"> Оқушының дербес зерттеу жоспарын жасап, нәтижені өзі қорғауы</label>
+          <label class="option"><input type="radio" name="n4q3" value="1"> Білімді қолдану үшін оқушының толық практикалық тапсырма орындауы</label>
+          <label class="option"><input type="radio" name="n4q3" value="2"> Реактивтерді сақтау жағдайын жүйелі түрде есепке алу</label>
+          <label class="option"><input type="radio" name="n4q3" value="3"> Оқушылардың жазбаша есептерді бірізді шешуі</label>
+          <label class="option"><input type="radio" name="n4q3" value="4"> Мұғалімнің химиялық құбылысты оқушыларға көрнекі түрде көрсетуі</label>
+          <div class="explain">Дұрыс жауап: E. Демонстрациялық тәжірибені мұғалім көрсетеді, ал оқушылар құбылысты бақылайды және түсіндіреді.</div>
+        </div>
+
+        <div class="question" data-answer="1,2,4">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>4. Зертханалық жұмыстың оқушыда қалыптастыратын дағдыларын таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n4q4" value="0"> Оқу бағдарламасын тарауларға бөлу</label>
+          <label class="option"><input type="checkbox" name="n4q4" value="1"> Бақылау жүргізу</label>
+          <label class="option"><input type="checkbox" name="n4q4" value="2"> Нәтижені талдау</label>
+          <label class="option"><input type="checkbox" name="n4q4" value="3"> Сабақ формасын таңдау</label>
+          <label class="option"><input type="checkbox" name="n4q4" value="4"> Қорытынды жасау</label>
+          <label class="option"><input type="checkbox" name="n4q4" value="5"> Бағалау шкаласын құрастыру</label>
+          <div class="explain">Дұрыс жауаптар: B, C, E. Зертханалық жұмыс бақылау, талдау және қорытынды жасау дағдыларын дамытады.</div>
+        </div>
+
+        <div class="question" data-answer="0">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>5. Эксперименттік есептің ерекшелігі:</p>
+          <label class="option"><input type="radio" name="n4q5" value="0"> Химиялық мәселе тәжірибе арқылы шешіліп, нәтиже реакция теңдеуімен түсіндіріледі</label>
+          <label class="option"><input type="radio" name="n4q5" value="1"> Оқу материалы терминдер кестесі арқылы жинақталады</label>
+          <label class="option"><input type="radio" name="n4q5" value="2"> Сабақ құрылымы мақсат, әдіс және нәтиже бойынша талданады</label>
+          <label class="option"><input type="radio" name="n4q5" value="3"> Оқушының ауызша жауабы бағалау критерийімен салыстырылады</label>
+          <label class="option"><input type="radio" name="n4q5" value="4"> Зертханалық құралдар сақтау тәртібі бойынша топтастырылады</label>
+          <div class="explain">Дұрыс жауап: A. Эксперименттік есепте мәселе тәжірибе арқылы шешіліп, нәтиже химиялық тұрғыдан түсіндіріледі.</div>
+        </div>
+
+        <button class="check-btn" onclick="checkBlock('block4')">Тестті тексеру</button>
+      </div>
+    </section>
+        <section id="block5" class="study-block">
+      <div class="study-block-header">
+        <div class="block-number">5</div>
+        <div>
+          <h2>Есеп шығару және жаттығулар жүйесі</h2>
+          <p>
+            Химиялық есептердің оқытудағы орны, есеп түрлері, алгоритм, жаттығу,
+            есеп арқылы ұғымды бекіту және оқушылардың логикалық ойлауын дамыту.
+          </p>
+        </div>
+      </div>
+
+      <div class="mini-tabs">
+        <button class="active" onclick="openTab(event, 'block5', 'theory')">Теория</button>
+        <button onclick="openTab(event, 'block5', 'formula')">Тірек</button>
+        <button onclick="openTab(event, 'block5', 'terms')">Термин</button>
+        <button onclick="openTab(event, 'block5', 'test')">Тест</button>
+      </div>
+
+      <div class="tab-content active" data-tab="theory">
+        <details open>
+          <summary>Химиялық есептің маңызы</summary>
+          <p>
+            Химиялық есептер оқушылардың теориялық білімін қолдануға, сандық
+            қатынастарды түсінуге, формула мен теңдеудің мағынасын ашуға және
+            логикалық ойлауын дамытуға көмектеседі. Есеп шығару химиялық ұғымды
+            бекітудің маңызды құралы болып саналады.
+          </p>
+          <div class="source-small">Дереккөз: Нұғыманұлы, Шоқыбаев, Өнербаева. “Химияны оқыту әдістемесі”.</div>
+        </details>
+
+        <details>
+          <summary>Есеп түрлері</summary>
+          <p>
+            Мектеп химиясында формула бойынша есептеу, теңдеу бойынша есептеу,
+            ерітінді концентрациясына арналған есептер, газдар көлемі, зат мөлшері,
+            масса, салыстырмалы молекулалық масса және эксперименттік есептер жиі
+            қолданылады.
+          </p>
+        </details>
+
+        <details>
+          <summary>Есеп шығару кезеңдері</summary>
+          <p>
+            Есеп шығару шартты талдаудан басталады. Одан кейін берілген шамалар
+            жазылады, қажетті формула немесе реакция теңдеуі таңдалады, есептеу
+            жүргізіледі және жауап химиялық мағынасы бойынша тексеріледі.
+          </p>
+        </details>
+
+        <details>
+          <summary>Жаттығулар жүйесі</summary>
+          <p>
+            Жаттығулар химиялық символика, формула жазу, теңдеу теңестіру, заттарды
+            жіктеу, терминдерді қолдану, есеп шығару және тәжірибе нәтижесін
+            түсіндіру әрекеттерін қалыптастырады. Жаттығу бірізді және жүйелі
+            берілгенде білім тұрақты болады.
+          </p>
+        </details>
+
+        <details>
+          <summary>Есеп арқылы ойлауды дамыту</summary>
+          <p>
+            Есеп шығару оқушыны салыстыруға, себеп-салдар байланысын табуға,
+            математикалық қатынасты химиялық мазмұнмен байланыстыруға және
+            дәлелді қорытынды жасауға үйретеді.
+          </p>
+        </details>
+
+        <details>
+          <summary>КТ үшін маңызды тұжырым</summary>
+          <p>
+            Есеп шығару әдістемесінде есеп шартын талдау, берілгенін жазу,
+            формула немесе теңдеу таңдау, есептеу және жауапты тексеру ретін білу
+            маңызды.
+          </p>
+        </details>
+      </div>
+
+      <div class="tab-content" data-tab="formula">
+        <div class="formula-list">
+          <div class="formula">Есеп шығару → шарт + формула/теңдеу + есептеу + жауап</div>
+          <div class="formula">n = m / M</div>
+          <div class="formula">m = n · M</div>
+          <div class="formula">M = m / n</div>
+          <div class="formula">Газ үшін: V = n · Vm</div>
+          <div class="formula">Қ.ж.: Vm = 22,4 л/моль</div>
+          <div class="formula">w = m(еріген зат) / m(ерітінді) · 100%</div>
+          <div class="formula">Теңдеу бойынша есеп → коэффициент қатынасы</div>
+          <div class="formula">Жаттығу → дағдыны бекіту құралы</div>
+          <div class="formula">Эксперименттік есеп → тәжірибе арқылы шешіледі</div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="terms">
+        <div class="term-list">
+          <div class="term"><b>Химиялық есеп</b><p>Химиялық білімді сандық немесе сапалық жағдаятта қолдануға арналған тапсырма.</p></div>
+          <div class="term"><b>Жаттығу</b><p>Белгілі білім мен әрекетті бекітуге арналған қайталама оқу тапсырмасы.</p></div>
+          <div class="term"><b>Алгоритм</b><p>Есепті орындаудың реттелген қадамдары.</p></div>
+          <div class="term"><b>Зат мөлшері</b><p>Мольмен өлшенетін химиялық шама.</p></div>
+          <div class="term"><b>Молярлық масса</b><p>Бір моль заттың массасы.</p></div>
+          <div class="term"><b>Массалық үлес</b><p>Еріген зат массасының ерітінді массасына қатынасы.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="test">
+        <div id="block5Result" class="result"></div>
+
+        <div class="question" data-answer="2">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>1. Химиялық есептердің оқытудағы негізгі қызметі:</p>
+          <label class="option"><input type="radio" name="n5q1" value="0"> Сабақтың ұйымдастыру формаларын сыртқы белгілері бойынша сипаттау</label>
+          <label class="option"><input type="radio" name="n5q1" value="1"> Оқулықтағы теориялық мәтінді тараулар бойынша жүйелеу</label>
+          <label class="option"><input type="radio" name="n5q1" value="2"> Теориялық білімді қолдану, сандық қатынасты түсіну және ойлауды дамыту</label>
+          <label class="option"><input type="radio" name="n5q1" value="3"> Зертханалық құралдар мен реактивтерді сақтау ретін белгілеу</label>
+          <label class="option"><input type="radio" name="n5q1" value="4"> Оқу бағдарламасындағы тақырыптардың көлемін анықтау</label>
+          <div class="explain">Дұрыс жауап: C. Химиялық есептер теорияны қолдануға, сандық қатынасты түсінуге және логикалық ойлауды дамытуға көмектеседі.</div>
+        </div>
+
+        <div class="question" data-answer="0,3,5">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>2. Химиялық есеп түрлеріне жататындарды таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n5q2" value="0"> Формула бойынша есептеу</label>
+          <label class="option"><input type="checkbox" name="n5q2" value="1"> Сабақ құрылымын талдау</label>
+          <label class="option"><input type="checkbox" name="n5q2" value="2"> Оқу мақсатын жіктеу</label>
+          <label class="option"><input type="checkbox" name="n5q2" value="3"> Теңдеу бойынша есептеу</label>
+          <label class="option"><input type="checkbox" name="n5q2" value="4"> Бағалау критерийін құру</label>
+          <label class="option"><input type="checkbox" name="n5q2" value="5"> Ерітінді концентрациясына есеп</label>
+          <div class="explain">Дұрыс жауаптар: A, D, F. Формула, теңдеу және ерітінді концентрациясы бойынша есептер мектеп химиясында кең қолданылады.</div>
+        </div>
+
+        <div class="question" data-answer="1">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>3. Есеп шығару кезеңдерінің дұрыс реті:</p>
+          <label class="option"><input type="radio" name="n5q3" value="0"> Жауап → формула → шарт → тексеру → есептеу</label>
+          <label class="option"><input type="radio" name="n5q3" value="1"> Шартты талдау → берілгенін жазу → формула/теңдеу таңдау → есептеу → жауапты тексеру</label>
+          <label class="option"><input type="radio" name="n5q3" value="2"> Формула → тақырып → анықтама → тәжірибе → нәтиже</label>
+          <label class="option"><input type="radio" name="n5q3" value="3"> Теңдеу → бағалау → жоспар → термин → қорытынды</label>
+          <label class="option"><input type="radio" name="n5q3" value="4"> Берілгені → сабақ мақсаты → оқулық → кесте → жауап</label>
+          <div class="explain">Дұрыс жауап: B. Есеп шығару шартты талдаудан басталып, жауапты химиялық мағынасы бойынша тексерумен аяқталады.</div>
+        </div>
+
+        <div class="question" data-answer="1,2,4">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>4. Жаттығулар жүйесінің қызметтерін таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n5q4" value="0"> Реактивтерді қоймада орналастыру</label>
+          <label class="option"><input type="checkbox" name="n5q4" value="1"> Химиялық символиканы бекіту</label>
+          <label class="option"><input type="checkbox" name="n5q4" value="2"> Формула және теңдеу жазу дағдысын дамыту</label>
+          <label class="option"><input type="checkbox" name="n5q4" value="3"> Сабақ кестесін құрастыру</label>
+          <label class="option"><input type="checkbox" name="n5q4" value="4"> Теориялық білімді қолдану</label>
+          <label class="option"><input type="checkbox" name="n5q4" value="5"> Кабинет жабдықтарын есепке алу</label>
+          <div class="explain">Дұрыс жауаптар: B, C, E. Жаттығулар химиялық символиканы, формула-теңдеу жазуды және білімді қолдануды бекітеді.</div>
+        </div>
+
+        <div class="question" data-answer="4">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>5. Эксперименттік есептің есептер жүйесіндегі ерекшелігі:</p>
+          <label class="option"><input type="radio" name="n5q5" value="0"> Химиялық ұғымдарды анықтамалар арқылы салыстыруға негізделеді</label>
+          <label class="option"><input type="radio" name="n5q5" value="1"> Оқу мәтінін жоспар бойынша қайта құруды талап етеді</label>
+          <label class="option"><input type="radio" name="n5q5" value="2"> Сандық шамаларды дайын формула арқылы есептеумен шектеледі</label>
+          <label class="option"><input type="radio" name="n5q5" value="3"> Теориялық материалды кесте және схема арқылы жинақтайды</label>
+          <label class="option"><input type="radio" name="n5q5" value="4"> Химиялық мәселені тәжірибе арқылы шешуді қажет етеді</label>
+          <div class="explain">Дұрыс жауап: E. Эксперименттік есепте химиялық мәселе тәжірибе арқылы шешіліп, нәтиже түсіндіріледі.</div>
+        </div>
+
+        <button class="check-btn" onclick="checkBlock('block5')">Тестті тексеру</button>
+      </div>
+    </section>
+        <section id="block6" class="study-block">
+      <div class="study-block-header">
+        <div class="block-number">6</div>
+        <div>
+          <h2>Көрнекілік және химияны оқыту құралдары</h2>
+          <p>
+            Көрнекілік принципі, модельдер, кестелер, сызбалар, коллекциялар,
+            оқулық, техникалық және цифрлық құралдар, оларды химия сабағында қолдану.
+          </p>
+        </div>
+      </div>
+
+      <div class="mini-tabs">
+        <button class="active" onclick="openTab(event, 'block6', 'theory')">Теория</button>
+        <button onclick="openTab(event, 'block6', 'formula')">Тірек</button>
+        <button onclick="openTab(event, 'block6', 'terms')">Термин</button>
+        <button onclick="openTab(event, 'block6', 'test')">Тест</button>
+      </div>
+
+      <div class="tab-content active" data-tab="theory">
+        <details open>
+          <summary>Көрнекіліктің маңызы</summary>
+          <p>
+            Көрнекілік химиялық ұғымдарды нақты елестетуге, зат құрылысы мен
+            реакция мәнін түсіндіруге көмектеседі. Химияда көптеген құбылыстар
+            микродеңгейде жүретіндіктен, модель, сызба, кесте және тәжірибе
+            оқушының түсінуін жеңілдетеді.
+          </p>
+          <div class="source-small">Дереккөз: Нұғыманұлы, Шоқыбаев, Өнербаева. “Химияны оқыту әдістемесі”.</div>
+        </details>
+
+        <details>
+          <summary>Көрнекілік түрлері</summary>
+          <p>
+            Көрнекілік табиғи объектілер, зат үлгілері, коллекциялар, модельдер,
+            кестелер, сызбалар, графиктер, реакция схемалары, бейнематериалдар және
+            цифрлық симуляциялар арқылы беріледі.
+          </p>
+        </details>
+
+        <details>
+          <summary>Модельдер</summary>
+          <p>
+            Модельдер атом, молекула, кристалдық тор, химиялық байланыс және реакция
+            механизмін түсіндіруге қолданылады. Модель оқушыға көзге көрінбейтін
+            құрылымды елестетуге мүмкіндік береді.
+          </p>
+        </details>
+
+        <details>
+          <summary>Кесте және сызба</summary>
+          <p>
+            Кестелер мен сызбалар химиялық ұғымдарды салыстыруға, жүйелеуге және
+            қорытындылауға көмектеседі. Мысалы, қосылыстар кластарын, реакция типтерін,
+            элемент қасиеттерін және есеп шығару алгоритмін кесте арқылы көрсету тиімді.
+          </p>
+        </details>
+
+        <details>
+          <summary>Оқулық және цифрлық құралдар</summary>
+          <p>
+            Оқулық негізгі оқу құралы ретінде теория, тәжірибе, есеп, сұрақ және
+            тапсырмалар жүйесін береді. Цифрлық құралдар күрделі процестерді модельдеуге,
+            виртуалды тәжірибе жасауға және білімді тексеруге мүмкіндік береді.
+          </p>
+        </details>
+
+        <details>
+          <summary>КТ үшін маңызды тұжырым</summary>
+          <p>
+            Көрнекілік құралдарын таңдағанда сабақ мақсаты, мазмұн, оқушы деңгейі,
+            химиялық ұғымның күрделілігі және қауіпсіздік ескеріледі.
+          </p>
+        </details>
+      </div>
+
+      <div class="tab-content" data-tab="formula">
+        <div class="formula-list">
+          <div class="formula">Көрнекілік → нақты елестету + түсіну + есте сақтау</div>
+          <div class="formula">Табиғи көрнекілік → зат үлгісі, коллекция</div>
+          <div class="formula">Бейнелік көрнекілік → сурет, схема, кесте</div>
+          <div class="formula">Модель → көзге көрінбейтін құрылымды көрсету</div>
+          <div class="formula">Кесте → салыстыру және жүйелеу</div>
+          <div class="formula">Сызба → байланыс пен реттілікті көрсету</div>
+          <div class="formula">Оқулық → негізгі оқу құралы</div>
+          <div class="formula">Цифрлық құрал → модельдеу + тексеру + визуализация</div>
+          <div class="formula">Виртуалды зертхана → қауіпсіз модельдік тәжірибе</div>
+          <div class="formula">Құрал таңдау → мақсат + мазмұн + оқушы деңгейі</div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="terms">
+        <div class="term-list">
+          <div class="term"><b>Көрнекілік</b><p>Оқу материалын көзбен көруге, елестетуге және түсінуге көмектесетін құралдар жүйесі.</p></div>
+          <div class="term"><b>Оқыту құралы</b><p>Білімді меңгеруге көмектесетін оқулық, модель, кесте, тәжірибе, цифрлық ресурс.</p></div>
+          <div class="term"><b>Модель</b><p>Зат құрылысын немесе процесті ықшамдап бейнелейтін құрал.</p></div>
+          <div class="term"><b>Кесте</b><p>Материалды салыстыруға және жүйелеуге арналған құрылым.</p></div>
+          <div class="term"><b>Сызба</b><p>Ұғымдар мен процестер арасындағы байланысты көрсететін бейнелік құрал.</p></div>
+          <div class="term"><b>Цифрлық ресурс</b><p>Оқытуда қолданылатын электрондық, интерактивті немесе виртуалды құрал.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="test">
+        <div id="block6Result" class="result"></div>
+
+        <div class="question" data-answer="2">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>1. Химиядағы көрнекіліктің негізгі әдістемелік қызметі:</p>
+          <label class="option"><input type="radio" name="n6q1" value="0"> Оқу бағдарламасының тақырыптық ретін анықтау</label>
+          <label class="option"><input type="radio" name="n6q1" value="1"> Бағалау тапсырмаларының санын жоспарлау</label>
+          <label class="option"><input type="radio" name="n6q1" value="2"> Абстрактілі химиялық ұғымдарды нақты елестетуге көмектесу</label>
+          <label class="option"><input type="radio" name="n6q1" value="3"> Реактивтердің сақтау мерзімін есепке алу</label>
+          <label class="option"><input type="radio" name="n6q1" value="4"> Сабақ кезеңдерін уақыт бойынша бөлу</label>
+          <div class="explain">Дұрыс жауап: C. Көрнекілік химиялық құрылым, құбылыс және байланыстарды нақты елестетуге көмектеседі.</div>
+        </div>
+
+        <div class="question" data-answer="0,3,5">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>2. Көрнекілік құралдарына жататындарды таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n6q2" value="0"> Молекулалық модель</label>
+          <label class="option"><input type="checkbox" name="n6q2" value="1"> Бағалау журналы</label>
+          <label class="option"><input type="checkbox" name="n6q2" value="2"> Сабақ кестесі</label>
+          <label class="option"><input type="checkbox" name="n6q2" value="3"> Химиялық кесте</label>
+          <label class="option"><input type="checkbox" name="n6q2" value="4"> Оқу мақсатының коды</label>
+          <label class="option"><input type="checkbox" name="n6q2" value="5"> Зат үлгілері коллекциясы</label>
+          <div class="explain">Дұрыс жауаптар: A, D, F. Модель, кесте және зат үлгілері химиядағы көрнекілік құралдарына жатады.</div>
+        </div>
+
+        <div class="question" data-answer="1">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>3. Модельді қолданудың негізгі мақсаты:</p>
+          <label class="option"><input type="radio" name="n6q3" value="0"> Сабақ формасын сынып деңгейіне сәйкестендіру</label>
+          <label class="option"><input type="radio" name="n6q3" value="1"> Көзге көрінбейтін құрылым мен процесті елестетуге мүмкіндік беру</label>
+          <label class="option"><input type="radio" name="n6q3" value="2"> Оқушы жауабын бағалау шкаласына түсіру</label>
+          <label class="option"><input type="radio" name="n6q3" value="3"> Оқу бағдарламасының мазмұнын қысқарту</label>
+          <label class="option"><input type="radio" name="n6q3" value="4"> Зертханалық құралдардың сақталуын бақылау</label>
+          <div class="explain">Дұрыс жауап: B. Модель атом, молекула, байланыс және тор сияқты көзге көрінбейтін құрылымды түсіндіреді.</div>
+        </div>
+
+        <div class="question" data-answer="1,2,4">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>4. Кесте мен сызбаның әдістемелік қызметтерін таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n6q4" value="0"> Реактивтерді сақтау температурасын анықтау</label>
+          <label class="option"><input type="checkbox" name="n6q4" value="1"> Ұғымдарды салыстыру</label>
+          <label class="option"><input type="checkbox" name="n6q4" value="2"> Материалды жүйелеу</label>
+          <label class="option"><input type="checkbox" name="n6q4" value="3"> Сабаққа қатысуды белгілеу</label>
+          <label class="option"><input type="checkbox" name="n6q4" value="4"> Байланыс пен реттілікті көрсету</label>
+          <label class="option"><input type="checkbox" name="n6q4" value="5"> Бағалау нәтижесін журналға енгізу</label>
+          <div class="explain">Дұрыс жауаптар: B, C, E. Кесте мен сызба салыстыру, жүйелеу және байланыстарды көрсету үшін қолданылады.</div>
+        </div>
+
+        <div class="question" data-answer="4">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>5. Цифрлық құралдардың химия сабағындағы тиімді қызметі:</p>
+          <label class="option"><input type="radio" name="n6q5" value="0"> Зертханалық реактивтерді қоймада орналастыру</label>
+          <label class="option"><input type="radio" name="n6q5" value="1"> Оқу жоспарын әкімшілік түрде бекіту</label>
+          <label class="option"><input type="radio" name="n6q5" value="2"> Сабақ кестесін автоматты түрде құру</label>
+          <label class="option"><input type="radio" name="n6q5" value="3"> Оқулықтағы параграфтарды нөмірлеу</label>
+          <label class="option"><input type="radio" name="n6q5" value="4"> Күрделі процестерді модельдеу және интерактивті көрсету</label>
+          <div class="explain">Дұрыс жауап: E. Цифрлық құралдар қауіпті немесе күрделі процестерді модельдеп, оқушыға көрнекі түрде түсіндіреді.</div>
+        </div>
+
+        <button class="check-btn" onclick="checkBlock('block6')">Тестті тексеру</button>
+      </div>
+    </section>
+        <section id="block7" class="study-block">
+      <div class="study-block-header">
+        <div class="block-number">7</div>
+        <div>
+          <h2>Оқушылардың танымдық әрекетін дамыту</h2>
+          <p>
+            Химия сабағында бақылау, салыстыру, талдау, дәлелдеу, қорытынды жасау,
+            проблемалық жағдаят, зерттеушілік тапсырма және оқушы белсенділігін дамыту.
+          </p>
+        </div>
+      </div>
+
+      <div class="mini-tabs">
+        <button class="active" onclick="openTab(event, 'block7', 'theory')">Теория</button>
+        <button onclick="openTab(event, 'block7', 'formula')">Тірек</button>
+        <button onclick="openTab(event, 'block7', 'terms')">Термин</button>
+        <button onclick="openTab(event, 'block7', 'test')">Тест</button>
+      </div>
+
+      <div class="tab-content active" data-tab="theory">
+        <details open>
+          <summary>Танымдық әрекеттің мәні</summary>
+          <p>
+            Танымдық әрекет — оқушының білімді қабылдау, түсіну, талдау, салыстыру,
+            дәлелдеу, қолдану және қорытынды жасау әрекеттерінің жүйесі. Химияда
+            бұл әрекет тәжірибе, есеп, модель, химиялық тіл және проблемалық тапсырма
+            арқылы дамиды.
+          </p>
+          <div class="source-small">Дереккөз: Нұғыманұлы, Шоқыбаев, Өнербаева. “Химияны оқыту әдістемесі”.</div>
+        </details>
+
+        <details>
+          <summary>Бақылау және салыстыру</summary>
+          <p>
+            Бақылау оқушыға химиялық құбылыстың сыртқы белгілерін көруге мүмкіндік
+            береді. Салыстыру ұқсастық пен айырмашылықты табуға көмектеседі. Бұл
+            әрекеттер химиялық ұғымның маңызды белгілерін анықтаудың негізі болады.
+          </p>
+        </details>
+
+        <details>
+          <summary>Талдау және қорытынды жасау</summary>
+          <p>
+            Талдау кезінде оқушы құбылыстың себебін, реакция нәтижесін және зат
+            қасиеттерінің байланысын анықтайды. Қорытынды жасау білімді жалпылауға,
+            реакция теңдеуімен дәлелдеуге және ұғымды жаңа жағдайда қолдануға үйретеді.
+          </p>
+        </details>
+
+        <details>
+          <summary>Проблемалық және зерттеушілік тапсырмалар</summary>
+          <p>
+            Проблемалық тапсырма оқушыны химиялық мәселені шешуге бағыттайды.
+            Зерттеушілік тапсырмада оқушы болжам жасайды, тәжірибе жоспарын құрады,
+            нәтиже алады және оны химиялық тұрғыдан түсіндіреді.
+          </p>
+        </details>
+
+        <details>
+          <summary>КТ үшін маңызды тұжырым</summary>
+          <p>
+            Танымдық әрекетті дамытуда бақылау, салыстыру, талдау, дәлелдеу,
+            қорытынды жасау және зерттеушілік әрекеттердің рөлін ажырата білу маңызды.
+          </p>
+        </details>
+      </div>
+
+      <div class="tab-content" data-tab="formula">
+        <div class="formula-list">
+          <div class="formula">Танымдық әрекет → қабылдау + түсіну + талдау + қолдану</div>
+          <div class="formula">Бақылау → құбылыс белгілерін көру</div>
+          <div class="formula">Салыстыру → ұқсастық пен айырмашылық</div>
+          <div class="formula">Талдау → себеп пен байланысты анықтау</div>
+          <div class="formula">Дәлелдеу → тәжірибе + теңдеу + түсіндіру</div>
+          <div class="formula">Қорытынды → жалпылау және жаңа жағдайда қолдану</div>
+          <div class="formula">Проблемалық тапсырма → мәселе + болжам + шешім</div>
+          <div class="formula">Зерттеушілік тапсырма → жоспар + тәжірибе + нәтиже + түсіндіру</div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="terms">
+        <div class="term-list">
+          <div class="term"><b>Танымдық әрекет</b><p>Оқушының білімді қабылдау, түсіну, талдау және қолдану әрекеті.</p></div>
+          <div class="term"><b>Бақылау</b><p>Құбылыстың белгілерін мақсатты түрде байқау.</p></div>
+          <div class="term"><b>Салыстыру</b><p>Объектілердің ұқсастығы мен айырмашылығын анықтау.</p></div>
+          <div class="term"><b>Талдау</b><p>Құбылыстың бөліктерін, себептерін және байланыстарын анықтау.</p></div>
+          <div class="term"><b>Проблемалық тапсырма</b><p>Оқушыны мәселе шешуге бағыттайтын оқу тапсырмасы.</p></div>
+          <div class="term"><b>Зерттеушілік тапсырма</b><p>Болжам, тәжірибе, нәтиже және қорытындыға негізделген тапсырма.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="test">
+        <div id="block7Result" class="result"></div>
+
+        <div class="question" data-answer="2">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>1. Танымдық әрекеттің химия сабағындағы мәні:</p>
+          <label class="option"><input type="radio" name="n7q1" value="0"> Оқу бағдарламасындағы тақырыптардың сыртқы ретін анықтау</label>
+          <label class="option"><input type="radio" name="n7q1" value="1"> Зертханалық құралдарды сақтаудың әкімшілік тәртібін сипаттау</label>
+          <label class="option"><input type="radio" name="n7q1" value="2"> Білімді қабылдау, түсіну, талдау, дәлелдеу және қолдану әрекеттері</label>
+          <label class="option"><input type="radio" name="n7q1" value="3"> Сабақ формаларын күнтізбелік жоспар бойынша бөлу</label>
+          <label class="option"><input type="radio" name="n7q1" value="4"> Оқулықтағы параграфтарды бағалау тапсырмасымен сәйкестендіру</label>
+          <div class="explain">Дұрыс жауап: C. Танымдық әрекет оқушының білімді қабылдау, түсіну, талдау, дәлелдеу және қолдану әрекеттерін қамтиды.</div>
+        </div>
+
+        <div class="question" data-answer="0,3,5">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>2. Танымдық әрекетті дамытуға көмектесетін әрекеттерді таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n7q2" value="0"> Бақылау жүргізу</label>
+          <label class="option"><input type="checkbox" name="n7q2" value="1"> Сабақ кестесін рәсімдеу</label>
+          <label class="option"><input type="checkbox" name="n7q2" value="2"> Кабинет құжаттарын реттеу</label>
+          <label class="option"><input type="checkbox" name="n7q2" value="3"> Салыстыру және талдау</label>
+          <label class="option"><input type="checkbox" name="n7q2" value="4"> Қатысу журналын толтыру</label>
+          <label class="option"><input type="checkbox" name="n7q2" value="5"> Дәлелдеу және қорытынды жасау</label>
+          <div class="explain">Дұрыс жауаптар: A, D, F. Бақылау, салыстыру, талдау, дәлелдеу және қорытынды жасау оқушының танымдық әрекетін дамытады.</div>
+        </div>
+
+        <div class="question" data-answer="4">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>3. Зерттеушілік тапсырмаға сәйкес сипаттама:</p>
+          <label class="option"><input type="radio" name="n7q3" value="0"> Оқу материалын дайын кесте арқылы қайталау</label>
+          <label class="option"><input type="radio" name="n7q3" value="1"> Терминдерді анықтамаларымен сәйкестендіру</label>
+          <label class="option"><input type="radio" name="n7q3" value="2"> Сабақ мақсатын бағалау критерийімен байланыстыру</label>
+          <label class="option"><input type="radio" name="n7q3" value="3"> Формулаларды тақырып бойынша топтастыру</label>
+          <label class="option"><input type="radio" name="n7q3" value="4"> Болжам жасап, тәжірибе жоспарын құрып, нәтижені түсіндіру</label>
+          <div class="explain">Дұрыс жауап: E. Зерттеушілік тапсырма болжам, жоспар, тәжірибе, нәтиже және түсіндіруге негізделеді.</div>
+        </div>
+
+        <div class="question" data-answer="1,2,4">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>4. Химияда дәлелдеуге негіз болатын құралдарды таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n7q4" value="0"> Сабақ кестесі</label>
+          <label class="option"><input type="checkbox" name="n7q4" value="1"> Тәжірибе нәтижесі</label>
+          <label class="option"><input type="checkbox" name="n7q4" value="2"> Реакция теңдеуі</label>
+          <label class="option"><input type="checkbox" name="n7q4" value="3"> Қатысу журналы</label>
+          <label class="option"><input type="checkbox" name="n7q4" value="4"> Химиялық түсіндіру</label>
+          <label class="option"><input type="checkbox" name="n7q4" value="5"> Кабинет паспорты</label>
+          <div class="explain">Дұрыс жауаптар: B, C, E. Химиялық дәлелдеу тәжірибе нәтижесіне, реакция теңдеуіне және ғылыми түсіндіруге сүйенеді.</div>
+        </div>
+
+        <button class="check-btn" onclick="checkBlock('block7')">Тестті тексеру</button>
+      </div>
+    </section>
+
+    <section id="block8" class="study-block">
+      <div class="study-block-header">
+        <div class="block-number">8</div>
+        <div>
+          <h2>Жинақ тест</h2>
+          <p>
+            Нұғыманұлы, Шоқыбаев, Өнербаева оқу құралы бойынша негізгі әдістемелік
+            тіректерді қайталау.
+          </p>
+        </div>
+      </div>
+
+      <div class="mini-tabs">
+        <button class="active" onclick="openTab(event, 'block8', 'theory')">Нұсқаулық</button>
+        <button onclick="openTab(event, 'block8', 'formula')">Қайталау</button>
+        <button onclick="openTab(event, 'block8', 'terms')">Термин</button>
+        <button onclick="openTab(event, 'block8', 'test')">Тест</button>
+      </div>
+
+      <div class="tab-content active" data-tab="theory">
+        <details open>
+          <summary>Қорытынды қайталау</summary>
+          <p>
+            Бұл тест химиялық ұғым, химиялық тіл, эксперимент, есеп, көрнекілік және
+            танымдық әрекет тақырыптарын бекітуге арналған.
+          </p>
+        </details>
+      </div>
+
+      <div class="tab-content" data-tab="formula">
+        <div class="formula-list">
+          <div class="formula">ХОӘ → мақсат + мазмұн + әдіс + құрал + нәтиже</div>
+          <div class="formula">Ұғым → бақылау + салыстыру + анықтама + қолдану</div>
+          <div class="formula">Химиялық тіл → символика + терминология + номенклатура</div>
+          <div class="formula">Эксперимент → бақылау + дәлелдеу + қорытынды</div>
+          <div class="formula">Есеп → шарт + формула/теңдеу + есептеу + жауап</div>
+          <div class="formula">Көрнекілік → нақты елестету және жүйелеу</div>
+          <div class="formula">Танымдық әрекет → талдау + дәлелдеу + қолдану</div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="terms">
+        <div class="term-list">
+          <div class="term"><b>Әдістемелік жүйе</b><p>Мақсат, мазмұн, әдіс, құрал, форма және нәтиже байланысы.</p></div>
+          <div class="term"><b>Химиялық ұғым</b><p>Химиялық объектінің маңызды белгілерін бейнелейтін ой формасы.</p></div>
+          <div class="term"><b>Химиялық эксперимент</b><p>Құбылысты тәжірибе арқылы түсіндіру құралы.</p></div>
+          <div class="term"><b>Көрнекілік</b><p>Ұғымды нақты елестетуге көмектесетін құрал.</p></div>
+        </div>
+      </div>
+
+      <div class="tab-content" data-tab="test">
+        <div id="block8Result" class="result"></div>
+
+        <div class="question" data-answer="2">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>1. Әдістемелік жүйенің дұрыс құрамы:</p>
+          <label class="option"><input type="radio" name="n8q1" value="0"> Реактив, ыдыс, штатив, индикатор, қыздырғыш</label>
+          <label class="option"><input type="radio" name="n8q1" value="1"> Сабақ, экскурсия, олимпиада, үйірме, факультатив</label>
+          <label class="option"><input type="radio" name="n8q1" value="2"> Мақсат, мазмұн, әдіс, құрал, форма, нәтиже</label>
+          <label class="option"><input type="radio" name="n8q1" value="3"> Тақырып, параграф, сұрақ, жаттығу, қорытынды</label>
+          <label class="option"><input type="radio" name="n8q1" value="4"> Формула, теңдеу, коэффициент, индекс, белгі</label>
+          <div class="explain">Дұрыс жауап: C. Әдістемелік жүйе мақсат, мазмұн, әдіс, құрал, форма және нәтижеден тұрады.</div>
+        </div>
+
+        <div class="question" data-answer="0,3,5">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>2. Химиялық тілдің құрамына кіретіндерді таңдаңыз:</p>
+          <label class="option"><input type="checkbox" name="n8q2" value="0"> Символика</label>
+          <label class="option"><input type="checkbox" name="n8q2" value="1"> Сабақ формасы</label>
+          <label class="option"><input type="checkbox" name="n8q2" value="2"> Зертханалық құрал</label>
+          <label class="option"><input type="checkbox" name="n8q2" value="3"> Терминология</label>
+          <label class="option"><input type="checkbox" name="n8q2" value="4"> Оқу мақсаты</label>
+          <label class="option"><input type="checkbox" name="n8q2" value="5"> Номенклатура</label>
+          <div class="explain">Дұрыс жауаптар: A, D, F. Химиялық тіл символика, терминология және номенклатурадан тұрады.</div>
+        </div>
+
+        <div class="question" data-answer="1">
+          <span class="question-note">Бір дұрыс жауап</span>
+          <p>3. Эксперименттің химияны оқытудағы негізгі рөлі:</p>
+          <label class="option"><input type="radio" name="n8q3" value="0"> Сабақ уақытын әдістемелік кезеңдерге бөлу</label>
+          <label class="option"><input type="radio" name="n8q3" value="1"> Химиялық құбылысты бақылау және теорияны дәлелдеу</label>
+          <label class="option"><input type="radio" name="n8q3" value="2"> Оқулықтағы мәтінді бөлімдер бойынша қысқарту</label>
+          <label class="option"><input type="radio" name="n8q3" value="3"> Бағалау нәтижесін журналға енгізу</label>
+          <label class="option"><input type="radio" name="n8q3" value="4"> Оқу бағдарламасындағы тақырыптарды реттеу</label>
+          <div class="explain">Дұрыс жауап: B. Эксперимент химиялық құбылысты бақылауға және теориялық ұғымды дәлелдеуге көмектеседі.</div>
+        </div>
+
+        <div class="question" data-answer="1,2,4">
+          <span class="question-note">Бірнеше дұрыс жауап</span>
+          <p>4. Оқушының танымдық әрекетін дамытатын әрекеттер:</p>
+          <label class="option"><input type="checkbox" name="n8q4" value="0"> Кабинет құжатын рәсімдеу</label>
+          <label class="option"><input type="checkbox" name="n8q4" value="1"> Бақылау</label>
+          <label class="option"><input type="checkbox" name="n8q4" value="2"> Талдау</label>
+          <label class="option"><input type="checkbox" name="n8q4" value="3"> Қатысу журналын толтыру</label>
+          <label class="option"><input type="checkbox" name="n8q4" value="4"> Қорытынды жасау</label>
+          <label class="option"><input type="checkbox" name="n8q4" value="5"> Сабақ кестесін көшіру</label>
+          <div class="explain">Дұрыс жауаптар: B, C, E. Бақылау, талдау және қорытынды жасау танымдық әрекетті дамытады.</div>
+        </div>
+
+        <button class="check-btn" onclick="checkBlock('block8')">Тестті тексеру</button>
+      </div>
+    </section>
+
+    <div class="copyright-note">
+      © Назерке. Барлық құқық қорғалған. Материалды рұқсатсыз көшіруге,
+      сатуға, қайта таратуға немесе коммерциялық мақсатта қолдануға болмайды.
+    </div>
+
+    <footer>
+      Химияны оқыту әдістемесі · Нұғыманұлы · Шоқыбаев · Өнербаева
+    </footer>
+
+  </div>
+
+  <script>
+    function openTab(event, blockId, tabName) {
+      const block = document.getElementById(blockId);
+      if (!block) return;
+
+      const contents = block.querySelectorAll(".tab-content");
+      const buttons = block.querySelectorAll(".mini-tabs button");
+
+      contents.forEach(content => content.classList.remove("active"));
+      buttons.forEach(button => button.classList.remove("active"));
+
+      const selected = block.querySelector('.tab-content[data-tab="' + tabName + '"]');
+      if (selected) selected.classList.add("active");
+
+      event.currentTarget.classList.add("active");
+    }
+
+    function arraysEqual(a, b) {
+      if (a.length !== b.length) return false;
+      const sortedA = [...a].sort();
+      const sortedB = [...b].sort();
+
+      for (let i = 0; i < sortedA.length; i++) {
+        if (sortedA[i] !== sortedB[i]) return false;
+      }
+
+      return true;
+    }
+
+    function checkBlock(blockId) {
+      const block = document.getElementById(blockId);
+      if (!block) return;
+
+      const questions = block.querySelectorAll(".question");
+      const result = block.querySelector(".result");
+
+      let correctCount = 0;
+      let answeredCount = 0;
+
+      questions.forEach(question => {
+        const correctAnswers = question.getAttribute("data-answer").split(",").map(item => item.trim());
+        const options = question.querySelectorAll(".option");
+        const explanation = question.querySelector(".explain");
+        const checkedInputs = question.querySelectorAll("input:checked");
+        const selectedAnswers = Array.from(checkedInputs).map(input => input.value);
+
+        options.forEach(option => option.classList.remove("correct", "wrong"));
+
+        if (explanation) explanation.classList.add("show");
+
+        options.forEach(option => {
+          const input = option.querySelector("input");
+          if (!input) return;
+
+          if (correctAnswers.includes(input.value)) {
+            option.classList.add("correct");
+          }
+
+          if (input.checked && !correctAnswers.includes(input.value)) {
+            option.classList.add("wrong");
+          }
+        });
+
+        if (selectedAnswers.length > 0) {
+          answeredCount++;
+
+          if (arraysEqual(selectedAnswers, correctAnswers)) {
+            correctCount++;
+          }
+        }
+      });
+
+      const total = questions.length;
+      const percent = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+
+      let message = "";
+      if (percent >= 90) {
+        message = "Өте жақсы нәтиже. Негізгі әдістемелік тіректер жақсы меңгерілген.";
+      } else if (percent >= 70) {
+        message = "Жақсы нәтиже. Қате кеткен сұрақтардың түсіндірмесін қайта қарап шық.";
+      } else if (percent >= 50) {
+        message = "Орташа нәтиже. Теория, тірек және термин бөлімдерін қайталау керек.";
+      } else {
+        message = "Бұл бөлімді қайта оқу қажет. Алдымен теорияны оқып, кейін тестті қайта орында.";
+      }
+
+      result.innerHTML =
+        '<div class="score">' + correctCount + ' / ' + total + '</div>' +
+        '<div>Жауап берілген сұрақтар: ' + answeredCount + ' / ' + total + '</div>' +
+        '<div>Нәтиже: ' + percent + '%</div>' +
+        '<p style="margin-top:8px;">' + message + '</p>';
+
+      result.classList.add("show");
+
+      result.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+    }
+  </script>
+</body>
+</html>
